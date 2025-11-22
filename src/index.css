@@ -18,11 +18,11 @@
   }
 
   body {
-    @apply antialiased;
+    @apply antialiased bg-slate-950;
   }
 }
 
-/* Custom utility classes for shadcn/ui patterns */
+/* Custom utility classes */
 @layer utilities {
   .animate-in {
     animation-name: animateIn;
@@ -42,5 +42,10 @@
     --tw-exit-rotate: initial;
     --tw-exit-translate-x: initial;
     --tw-exit-translate-y: initial;
+  }
+
+  /* Perspective helper to enable 3D feel */
+  .perspective-1000 {
+    perspective: 1000px;
   }
 }
